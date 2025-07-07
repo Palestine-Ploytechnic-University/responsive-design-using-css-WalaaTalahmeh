@@ -1,8 +1,9 @@
-*{
-  padding :0;
-  margin :0;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #f0f4f8;
@@ -60,14 +61,18 @@ body {
 .profile-card {
   background-color: #abe1ab;
   color: #169c05;
-  height :100px;
+  height: 100px;
   font-weight: bold;
-  padding: 16px;
+  padding: 10px;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 1.2rem;
   transition: transform 0.2s ease-in-out;
+}
+
+p {
+  padding-top: 16px;
 }
 
 
@@ -189,4 +194,8 @@ body {
   max-width: 1000px;
   padding: 20px;
   border-radius: 12px;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
 }
