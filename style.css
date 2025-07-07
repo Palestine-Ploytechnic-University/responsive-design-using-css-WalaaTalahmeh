@@ -1,3 +1,8 @@
+*{
+  padding :0;
+  margin :0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Inter", sans-serif;
   background-color: #f0f4f8;
@@ -19,28 +24,32 @@ body {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* Grid Columns (Responsive) */
 .grid-container {
   grid-template-columns: repeat(1, 1fr);
 }
+
 @media (min-width: 640px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (min-width: 1024px) {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 @media (min-width: 1280px) {
   .grid-container {
     grid-template-columns: repeat(5, 1fr);
@@ -51,6 +60,7 @@ body {
 .profile-card {
   background-color: #abe1ab;
   color: #169c05;
+  height :100px;
   font-weight: bold;
   padding: 16px;
   border-radius: 12px;
@@ -68,24 +78,28 @@ body {
     color: cornflowerblue;
   }
 }
+
 @media (min-width: 400px) {
   .profile-card {
     background-color: #991b1b;
     color: #e8a3a3;
   }
 }
+
 @media (min-width: 500px) {
   .profile-card {
     background-color: #ccaa7b;
     color: #a16207;
   }
 }
+
 @media (min-width: 700px) {
   .profile-card {
     background-color: #d61414;
     color: #e4a1a1;
   }
 }
+
 @media (min-width: 900px) {
   .profile-card {
     background-color: #0dbece;
@@ -108,25 +122,65 @@ body {
   min-height: 120px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* Card Color Variants */
-.card-blue { background-color: #bfdbfe; color: #1e40af; }
-.card-green { background-color: #d1fae5; color: #065f46; }
-.card-purple { background-color: #e9d5ff; color: #6b21a8; }
-.card-yellow { background-color: #fef08a; color: #a16207; }
-.card-red { background-color: #fee2e2; color: #991b1b; }
-.card-orange { background-color: #fed7aa; color: #c2410c; }
-.card-teal { background-color: #ccfbf1; color: #0f766e; }
-.card-pink { background-color: #fbcfe8; color: #be185d; }
-.card-indigo { background-color: #c7d2fe; color: #4338ca; }
-.card-lime { background-color: #d9f99d; color: #4d7c0f; }
+.card-blue {
+  background-color: #bfdbfe;
+  color: #1e40af;
+}
+
+.card-green {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.card-purple {
+  background-color: #e9d5ff;
+  color: #6b21a8;
+}
+
+.card-yellow {
+  background-color: #fef08a;
+  color: #a16207;
+}
+
+.card-red {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.card-orange {
+  background-color: #fed7aa;
+  color: #c2410c;
+}
+
+.card-teal {
+  background-color: #ccfbf1;
+  color: #0f766e;
+}
+
+.card-pink {
+  background-color: #fbcfe8;
+  color: #be185d;
+}
+
+.card-indigo {
+  background-color: #c7d2fe;
+  color: #4338ca;
+}
+
+.card-lime {
+  background-color: #d9f99d;
+  color: #4d7c0f;
+}
 
 /* Container Wrapper */
 .container {
